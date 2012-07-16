@@ -19,9 +19,8 @@
 Iconography for all post formats
 
 ## License:
-The Theme itself is nothing but 100% GPL3. See 
-license.txt for further details. There are however some 
-parts of this Theme which are not GPL;
+The Theme is GPL3 (See 
+license.txt for further details) except for the following exceptions;
 
 * Icons - SIL Open Font License (OFL) Iconic - http://somerandomdude.com/work/iconic/
 * Respond - MIT/BSD © 2012: Scott Jehl, Paul Irish, Nicholas Zakas
