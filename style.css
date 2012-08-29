@@ -353,10 +353,18 @@ h4,
 h5,
 h6 {
   font-family: sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.75);
   margin: 0;
   line-height: 1.75em;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: 300;
 }
 h1,
 .site-title {
@@ -631,12 +639,10 @@ article.attachment h2:first-child,
 article.post .meta,
 article.attachment .meta,
 .type-page .meta {
-  color: rgba(0, 0, 0, 0.3);
-  font-size: .734em;
-  line-height: 2.38em;
-  margin-top: .55em;
+  color: rgba(0, 0, 0, 0.175);
   font-family: sans-serif;
   display: none;
+  font-size: .75em;
 }
 article.post .meta li,
 article.attachment .meta li,
@@ -645,8 +651,7 @@ article.attachment .meta li,
   margin-left: 0;
   padding-left: 0;
   text-transform: uppercase;
-  line-height: 1.618em;
-  margin-bottom: 1.2em;
+  line-height: 2.35;
 }
 article.post .meta li i,
 article.attachment .meta li i,
@@ -655,14 +660,13 @@ article.attachment .meta li i,
   text-transform: none;
   letter-spacing: normal;
   font-style: normal;
+  display: none;
 }
 article.post .meta li a,
 article.attachment .meta li a,
 .type-page .meta li a {
-  filter: alpha(opacity=@opacity * 100);
-  -moz-opacity: 0.7;
-  -khtml-opacity: 0.7;
-  opacity: 0.7;
+  color: rgba(0, 0, 0, 0.25);
+  font-weight: normal;
 }
 article.post img,
 article.attachment img,
@@ -883,8 +887,8 @@ article.post ol.commentlist li .comment-meta:after,
   color: rgba(0, 0, 0, 0.1);
   margin-left: .618em;
 }
-article.post ol.commentlist li .comment-meta  + p,
-.page ol.commentlist li .comment-meta  + p {
+article.post ol.commentlist li .comment-meta + p,
+.page ol.commentlist li .comment-meta + p {
   clear: both;
 }
 article.post ol.commentlist li .reply,
@@ -984,13 +988,12 @@ ul.koster-archive li .excerpt p:last-child {
 }
 .navigation .prev {
   width: 48%;
-  float: left;
-  text-align: left;
+  float: right;
+  text-align: right;
 }
 .navigation .next {
   width: 48%;
-  float: right;
-  text-align: right;
+  float: left;
 }
 /*--[ Tables ]--------------------------------------------------------------------------------*/
 table {
@@ -1095,7 +1098,6 @@ table {
   
   }
   .main-nav ul {
-    display: block;
     display: inline-block;
     display: block;
     float: right;
@@ -1215,30 +1217,6 @@ table {
     width: 48.65%;
   }
   /*--[ Post Formats ]--------------------------------------------------------------------------------*/
-  .format-aside h1.title,
-  .format-gallery h1.title,
-  .format-link h1.title,
-  .format-image h1.title,
-  .format-quote h1.title,
-  .format-status h1.title,
-  .format-video h1.title,
-  .format-audio h1.title,
-  .format-chat h1.title,
-  .format-standard h1.title {
-    text-indent: -1em;
-  }
-  .format-aside h1.title:before,
-  .format-gallery h1.title:before,
-  .format-link h1.title:before,
-  .format-image h1.title:before,
-  .format-quote h1.title:before,
-  .format-status h1.title:before,
-  .format-video h1.title:before,
-  .format-audio h1.title:before,
-  .format-chat h1.title:before,
-  .format-standard h1.title:before {
-    float: none;
-  }
   /*--[ Images ]--------------------------------------------------------------------------------*/
   img.alignleft {
     margin: 1.618em 1.618em 1.618em -25%;
@@ -1387,13 +1365,8 @@ table {
     max-width: 87%;
   }
 }
-@media only screen and (min-width: 1600px) {
-  body {
-    font-size: 1.8em;
-  }
-}
 @media only screen and (min-width: 1920px) {
   body {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 }

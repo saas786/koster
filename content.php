@@ -31,6 +31,8 @@
 	<section class="article-content ninecol last">
 	
 		<?php the_content( __( 'Continue reading &rarr;', 'koster' ) ); ?>
+				
+		<?php the_tags('<strong>Tagged</strong> ',', ',''); ?>
 	
 	</section><!--/.article-content-->
 	

@@ -135,8 +135,6 @@ if ( ! function_exists( 'koster_post_meta' ) ) {
 	function koster_post_meta() { ?>
 		<ul>
 			<li class="date"><i><?php _e('Posted on', 'koster'); ?></i> <?php the_time(get_option('date_format')); ?></li>
-			<li class="category"><i><?php _e('Posted in', 'koster'); ?></i> <?php the_category(', '); ?></li>
-			<li class="tags"><?php the_tags('<i>Tagged</i> ',', ',''); ?></li>
 			<li class="comment"><i><?php _e('Your thoughts', 'koster'); ?></i> <?php comments_popup_link( __( 'Leave a comment', 'koster' ), __( '1 Comment', 'koster' ), __( '% Comments', 'koster' ) ); ?></li>
 			<li class="permalink"><i><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'koster' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php _e('Permalink','koster'); ?></a></i></li>
 		</ul>
@@ -155,8 +153,8 @@ function koster_content_nav( $nav_id ) {
 
 	if ( $wp_query->max_num_pages > 1 ) : ?>
 		<nav id="<?php echo $nav_id; ?>" class="navigation">
-			<div class="prev"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'koster' ) ); ?></div>
-			<div class="next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'koster' ) ); ?></div>
+			<div class="next"><?php previous_posts_link( __( '<span class="meta-nav">&larr;</span> Newer posts', 'koster' ) ); ?></div>
+			<div class="prev"><?php next_posts_link( __( 'Older posts <span class="meta-nav">&rarr;</span>', 'koster' ) ); ?></div>
 		</nav><!-- #nav-above -->
 	<?php endif;
 }

@@ -104,8 +104,8 @@ body {
 	background: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 { font-family: @fontstack1; font-weight: 700; color:rgba(0,0,0,0.75); margin:0; line-height: 1.75em; }
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {}
+h1, h2, h3, h4, h5, h6 { font-family: @fontstack1; font-weight: 300; color:rgba(0,0,0,0.75); margin:0; line-height: 1.75em; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: 300; }
 
 h1, .site-title { display:block; font-size:1.921em; padding:2.618em 0 1em; letter-spacing: -1px; line-height: 1.118em }
 h2 { font-size:1.618em; padding:2.618em 0 1em; letter-spacing: -1px; }
@@ -316,30 +316,29 @@ article.post, article.attachment, .type-page {
 	}
 	
 	.meta {
-		color:rgba(0,0,0,0.3);
-		font-size:.734em;
-		line-height: 2.38em;
-		margin-top:.55em;
+		color:rgba(0,0,0,0.175);
 		font-family: @fontstack1;
 		display:none;
+		font-size:.75em;
 		
 		li {
 			list-style: none;
 			margin-left:0;
 			padding-left:0;
 			text-transform: uppercase;
-			line-height:1.618em;
-			margin-bottom:1.2em;
+			line-height:2.35;
 			
 			i {
 				display: block;
 				text-transform: none;
 				letter-spacing: normal;
 				font-style: normal;
+				display: none;
 			}
 			
 			a {
-				.opacity(0.7);
+				color:rgba(0,0,0,0.25);
+				font-weight: normal;
 			}
 		}
 	}
@@ -640,14 +639,13 @@ ul.koster-archive {
 	
 	.prev {
 		width:48%;
-		float: left;
-		text-align: left;
+		float: right;
+		text-align: right;
 	}
 	
 	.next {
 		width:48%;
-		float: right;
-		text-align: right;
+		float: left;
 	}
 }
 
@@ -911,10 +909,7 @@ table {
 
 	.format-aside, .format-gallery, .format-link, .format-image, .format-quote, .format-status, .format-video, .format-audio, .format-chat, .format-standard {
 		h1.title {	
-			text-indent: -1em;
-			&:before {
-				float: none;
-			}
+			
 		}
 	}
 	
@@ -1060,14 +1055,8 @@ table {
 	}
 }
 
-@media only screen and (min-width: 1600px) { 
-	body {
-		font-size:1.8em;
-	}
-}
-
 @media only screen and (min-width: 1920px) { 
 	body {
-		font-size:2em;
+		font-size:1.8em;
 	}
 }
