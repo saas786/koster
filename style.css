@@ -651,7 +651,7 @@ article.attachment .meta li,
   margin-left: 0;
   padding-left: 0;
   text-transform: uppercase;
-  line-height: 2.35;
+  line-height: 2.3;
 }
 article.post .meta li i,
 article.attachment .meta li i,
@@ -754,8 +754,9 @@ img.wp-post-image {
   display: inline-block;
   font-family: 'IconicFill';
   width: 1em;
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.15);
   float: right;
+  margin-left: 1em;
 }
 .format-aside h1.title:before {
   content: "\e066";
