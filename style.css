@@ -607,7 +607,9 @@ article.post,
 article.attachment,
 .type-page {
   margin-bottom: 0;
-  padding-bottom: 1.618em;
+  padding-bottom: 2.618em;
+  margin-bottom: 2.618em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: inline-block;
   display: block;
 }
@@ -1278,33 +1280,6 @@ table {
     -moz-border-radius: 3px;
     border-radius: 3px;
   }
-  .archive_header:after {
-    font-family: 'IconicFill';
-    display: inline-block;
-    float: right;
-    font-size: 2em;
-    padding: .5em;
-    background: #f9fbfb;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-topright: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    font-weight: normal;
-  }
-  .archive_header.category:after {
-    content: "\e065";
-  }
-  .archive_header.date:after {
-    content: "\e06c";
-  }
-  .archive_header.tag:after {
-    content: "\e02b";
-  }
-  .archive_header.search:after {
-    content: "\e074";
-  }
   article.post h1.title,
   article.attachment h1.title,
   .type-page h1.title {
@@ -1355,7 +1330,7 @@ table {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
-    width: 108.6%;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
